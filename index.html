@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+  <audio id="certa-resposta">
+    <source src="assets/media/certa-resposta.mp3" type="audio/mp3">
+  </audio>
+  <audio id="errou">
+    <source src="assets/media/faustao-errou.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="game-area">
+    <div id="intro" class="quizz-section">
+      <p class="title">
+        Welcome
+      </p>
+      <button onClick="startButtonClicked()">
+        Click me!
+      </button>
+    </div>
+
+    <div id="quizz" class="quizz-block quizz-section">
+      <div>
+        <p id="question" class="title"></p>
+        <image id="image" />
+        <div class="option-container">
+          <button id="opt1" onClick="onOptionSelected(this)" />
+          <button id="opt2" onClick="onOptionSelected(this)" />
+        </div>
+      </div>
+
+      <div id="result" class="result-container">
+        <div id="msg" class="title result-txt"></div>
+        <button onClick="next()" class="nxt">
+          Próxima
+        </button>
+      </div>
+    </div>
+    <div id="outro" class="end-video title">ACABOOOU!!!onze!!</div>
+  </div>
+</body>
+</html>
