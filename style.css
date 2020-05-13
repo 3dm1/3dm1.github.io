@@ -10,9 +10,9 @@ button {
   color: #ffffff;
   background: #00aa00;
   padding: 20px;
-  font-size: 25px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  font-size: 42px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 5px;
 }
 
@@ -22,29 +22,28 @@ table {
 }
 
 img {
-  margin: 10px;
+  margin: 5%;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
+  width: 50%;
   min-height: 200px;
 }
 
 .game-area {
   background: #fffeeb;
-  padding: 10px;
+  padding: 5%;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   text-align: center;
-  height: 95%;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
 
 .quizz-section {
   display: table-cell;
-  width: 100%;
+  height: 50%;
   text-align: center;
 }
 
@@ -52,20 +51,25 @@ img {
   display: none;
 }
 
-.end-video {
+.outro-section {
   display: none;
   align-items: center;
 }
 
 .title {
   color: #004000;
-  font-size: 35px;
+  font-size: 72px;
   margin-bottom: 10%;
-  margin-top: 5px;
+}
+
+.subtitle {
+  color: #004000;
+  font-size: 40px;
+  margin-bottom: 5%;
 }
 
 .option-container {
-  width: 60%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -74,12 +78,11 @@ img {
 .nxt {
   background: #00bb00;
   padding: 15px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .result-container {
-  margin: 5px;
-  margin-top: 5%;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   position: relative;
@@ -94,6 +97,6 @@ img {
 }
 
 .result-txt {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 0;
 }

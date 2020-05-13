@@ -14,17 +14,18 @@
   <div class="game-area">
     <div id="intro" class="quizz-section">
       <p class="title">
-        Welcome
+        Quizz Revelação!
       </p>
+      <p class="subtitle">Mini Lau ou mini Ed? Aumente o som.</p>
       <button onClick="startButtonClicked()">
-        Click me!
+        Começar
       </button>
     </div>
 
     <div id="quizz" class="quizz-block quizz-section">
       <div>
         <p id="question" class="title"></p>
-        <image id="image" />
+        <img id="image" />
         <div class="option-container">
           <button id="opt1" onClick="onOptionSelected(this)" />
           <button id="opt2" onClick="onOptionSelected(this)" />
@@ -38,7 +39,11 @@
         </button>
       </div>
     </div>
-    <div id="outro" class="end-video title">ACABOOOU!!!onze!!</div>
+    <div id="outro" class="outro-section">
+      <img src="assets/images/baby.jpg"/>
+      <p class="title">É MENINA!</p>
+      <p class="subtitle">Bem vinda, Rebecca!</p>
+    </div>
   </div>
 </body>
 </html>

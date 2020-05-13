@@ -5,6 +5,7 @@ let questions = [{
     "ans": 0
   }, {
     "q": "Qual será a reação da cacau ao ver o baby?",
+    "img": "assets/images/cacau.png",
     "opt": ["Protetora", "Ciumenta"],
     "ans": undefined,
   }, {
@@ -18,8 +19,8 @@ let questions = [{
     "ans": 1,
   }, {
     "q": "Quem vai contar as melhores piadas para o bebê?",
-    "opt": ["Laura", "Edson"],
-    "ans": 1,
+    "opt": ["Edson", "Laura"],
+    "ans": 0,
   }, {
     "q": "Quem vai ser mais bravo?",
     "opt": ["Laura", "Edson"],
@@ -27,7 +28,7 @@ let questions = [{
   }, {
     "q": "Para você? Menino ou menina?!",
     "opt": ["Menino", "Menina"],
-    "ans": undefined,
+    "ans": 1,
   }
 ];
 var idx = 0;
@@ -78,11 +79,15 @@ function onOptionSelected(el) {
 
   var resultBlock = document.getElementById("result");
   result.style.display = "flex";
+
+  idx++;
+  if (idx == questions.length) {
+    setTimeout(showEndVideo, 2 * 1000);
+  }
 }
 
 function next() {
   document.getElementById("result").style.display = "none";
-  idx++;
   if (idx < questions.length) {
     prepareQuestion();
   } else {
@@ -92,5 +97,5 @@ function next() {
 
 function showEndVideo() {
   document.getElementById("quizz").style.display = "none";
-  document.getElementById("outro").style.display = "flex";
+  document.getElementById("outro").style.display = "block";
 }
